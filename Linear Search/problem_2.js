@@ -11,8 +11,8 @@ const elementExists = (arr, target) => {
   return false;
 };
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 56, 45, 7, 86, 57];
+const arr = ["Apple", "Banana", "Mango"];
 
 // Test case
-console.log(elementExists(arr, 7)); // true
-console.log(elementExists(arr, 100)); // false
+console.log(elementExists(arr, "Banana")); // True
+console.log(elementExists(arr, "banana")); // case Sensitive --- so False
